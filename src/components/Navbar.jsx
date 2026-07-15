@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-gray-100 dark:bg-gray-800">
@@ -7,8 +9,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
       {/* Middle: Links */}
       <div className="flex gap-6">
-        <a href="#home" className="hover:text-pink-500">Home</a>
-        <a href="#products" className="hover:text-pink-500">Products</a>
+        <Link to="/" className="hover:text-pink-500">Home</Link>
+        <Link to="/products" className="hover:text-pink-500">Products</Link>
         <a href="#about" className="hover:text-pink-500">About</a>
         <a href="#contact" className="hover:text-pink-500">Contact</a>
       </div>
